@@ -1,0 +1,14 @@
+===== FOOD ORDERING SYSTEM - BILL =====
+Bill No.: 001
+Date & Time: 2026-01-30 19:37:27.173100
+----------------------------------------
+No.  Item               Qty    Total  
+----------------------------------------
+1    Margherita         1      ₹250    
+2    Lemonade           5      ₹400    
+3    Ice Cream          4      ₹360    
+----------------------------------------
+Subtotal: ₹1010
+GST @ 12%: ₹121
+Grand Total: ₹1131
+Thank you for ordering with us!
