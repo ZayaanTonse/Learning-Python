@@ -1,40 +1,18 @@
-#Program:ATM Menu System
+#Program:ATM Withdrawl Simulator
 
-print("=====ATM SYSTEM=====")
+print("=====ATM WITH SIMLUATOR=====")
 
 balance=5000
 
-def check_balance():
-    print("Current Balance:",balance)
-
-def deposit(amount):
-    return amount
-
-def withdraw(amount):
-    if amount > balance:
-        print("Insufficient Balance.")
-        return 0
-    return - amount
-
+#Loop until user enters valid amount
 while True:
-    print("\n1.Check Balance\n2.Deposit\n3.Withdraw\n4.Exit")
-    choice=int(input("Choose option:"))
+    amt=int(input("Enter amount to withdraw:"))
 
-    if choice ==1:
-        check_balance()
-
-    elif choice == 2:
-        amt=float(input("Amount to deposit: "))
-        balance +=deposit(amt)
-        print("Deposit successful.")
-
-    elif choice == 3:
-        amt=float(input("Amount to withdraw:"))
-        balance +=withdraw(amt)
-
-    elif choice == 4:
-        print("Exiting...")
-        break
-
+    if amt <=0:
+        print("Invalid amount Try again.")
+    elif amt > balance:
+        print("Insufficient balance.")
     else:
-        print("Invalid option.")
+        balance-=amt
+        print("Withdrawl successfull.Remaining balance:",balance)
+        break
